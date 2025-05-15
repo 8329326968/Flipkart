@@ -1,0 +1,25 @@
+test_suites:
+  - name: "Flipkart Basic Navigation"
+    test_cases:
+      - id: "TC001"
+        title: "Navigate to Kilos Section and Close Popup"
+        steps:
+          - step_number: 1
+            action: "Open website"
+            data: "https://www.flipkart.com/"
+            expected_result: ""
+            selectors: {}
+          - step_number: 2
+            action: "Click on 'Kilos'"
+            data: ""
+            expected_result: ""
+            selectors:
+              xpath: "//img[@alt='Kilos']"
+              css_selector: "img[alt='Kilos']"
+          - step_number: 3
+            action: "Click on '✕'"
+            data: ""
+            expected_result: ""
+            selectors:
+              xpath: "//button[contains(text(),'✕')]"
+              css_selector: "button"
